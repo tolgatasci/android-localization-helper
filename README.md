@@ -2,17 +2,13 @@
 A python script that helps you create strings.xml for all languages in different hierarchical folder (using microsoft translator Translation API cognitive services) 
 
 # usage
-
+strings.xml your file
 Syntax
 
 ```
-python3.7 translator.py <source_lang_code> <string_file_name>
+python3.7 translator.py
 ```
 
-Eg,
-```
-python3.7 translator.py en strings.xml
-```
 
 Output will be created in transalted/ folder with various langugaes folders.
 
