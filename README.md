@@ -9,6 +9,21 @@ Syntax
 python3.7 translator.py
 ```
 
+# Azure get Key
+
+  - Create a resource
+  - Search service input "cognitive services"
+  - Create cognitive services
+  - Go to Source
+  - left panel Key and Endpoint
+  - USE key1 or key 2 and Location/Region copy
+
+# Change Veriable
+
+```
+key = ""  # azure key
+region = "westus2" # azure key Location/Region
+```
 
 Output will be created in transalted/ folder with various langugaes folders.
 
