@@ -31,8 +31,6 @@ supported_languages = {  # as defined here: http://msdn.microsoft.com/en-us/libr
     'ar': ' Arabic',
     'bg': 'Bulgarian',
     'ca': 'Catalan',
-    'zh-CHS': 'Chinese (Simplified)',
-    'zh-CHT': 'Chinese (Traditional)',
     'cs': 'Czech',
     'da': 'Danish',
     'nl': 'Dutch',
