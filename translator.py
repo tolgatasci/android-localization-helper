@@ -77,7 +77,7 @@ def update_token():
     global token, key, region
     headers = {'Ocp-Apim-Subscription-Key': key, 'Ocp-Apim-Subscription-Region': region}
     r = requests.post(
-        "https://apicognitive.cognitiveservices.azure.com/sts/v1.0/issueToken"
+        "https://api.cognitive.microsoft.com/sts/v1.0/issueToken"
         , headers=headers)
     data = r.content
     token = data.decode("utf-8")
@@ -123,7 +123,7 @@ name, ext = os.path.splitext(INFILE)
 for language_name in languages_to_translate:
     language_to_translate = language_name.strip()
 
-    if (check_dir(language_to_translate)): # if exits dir stop and next lang 
+    if (check_dir(language_to_translate)): # if exits dir stop and next lang
         continue
     translated_file_directory = create_directories(language_to_translate)
     print(" -> " + language_to_translate + " =========================")
@@ -132,7 +132,7 @@ for language_name in languages_to_translate:
     tree = ET.parse(INFILE)
     root = tree.getroot()
     update_token() # Token refresh
-    # cycle through elements 
+    # cycle through elements
     for i in range(len(root)):
         isTranslatable = root[i].get('translatable')
         print((str(i) + " ========================="))
